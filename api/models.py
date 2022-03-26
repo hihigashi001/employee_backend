@@ -18,6 +18,7 @@ class Employee(models.Model):
     secondedDestination = models.CharField(max_length=50, blank=True, null=True)
     maidenName = models.CharField(max_length=50, blank=True, null=True)
     remarks = models.CharField(max_length=50, blank=True, null=True)
+    status = models.CharField(max_length=50, blank=True, null=True, default="在職")
 
     def __str__(self):
         return self.employeeId
